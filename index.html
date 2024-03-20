@@ -8,40 +8,116 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="navbar">
         <ul>
-            <li><a href="#" class="logo">Logo</a></li>
-            <li><a href="#" class="link">About Me</a></li>
-            <li><a href="#" class="link">Projects</a></li>
-            <li><a href="#" class="link">Blog</a></li>
-            <li><a href="#" class="link">Contact</a></li>
+            <li><a href="https://github.com/jadekam16" target="_blank" class="logo">Logo</a></li>
+            <li><a href=#About-Me class="link">About Me</a></li>
+            <li><a href=#Projects class="link">Projects</a></li>
+            <li><a href=#Blog class="link">Blog</a></li>
+            <li><a href=#Contact class="link">Contact</a></li>
         </ul>
     </nav>
 
-    <div class="card-body">
-        <div class="card">
-            <div class="card-container">
-                <div class="card-face front-face">
-                    <img src="assets/IMG_0208.jpg" alt="my-picture" />
-                    <h2>Jade Kam</h2>
-                    <h3>4th Year UNSW Computer Science and Commerce Student</h3>
+    <main>
+        <section id="homepage">
+            <div class="intro-body">
+                <h1>Hey, I'm Jade!</h1>
+                <h1>I'm interested in</h1>
+                <div class="wrapper">
+                    <div class="centeredBox">
+                        <span id="typewriter" data-array=""></span>
+                        <span class="cursor"></span>
+                    </div>
                 </div>
-                <div class="card-face back-face">
-                    <div class="container-about">
-                        <h2>About me</h2>
-                        <p>
-                            Hey, I'm Jade.
-                        </p>
-                        <div class="row">
-                            <a href="" target="_blank"><i class="bi fb bi-facebook"></i></a>
-                            <a href="" target="_blank"><i class="bi fb bi-instagram"></i></a>
-                            <a href="" target="_blank"><i class="bi fb bi-github"></i></a>
+            </div>
+        </section>
+        <section id="About-Me">
+            <h1>About Me</h1>
+            <div class="card-body">
+                <div class="card">
+                    <div class="card-container">
+                        <div class="card-face front-face">
+                            <img src="assets/IMG_0208.jpg" alt="my-picture" />
+                            <h2>Jade Kam</h2>
+                            <h3>4th Year UNSW Computer Science and Commerce Student</h3>
+                        </div>
+                        <div class="card-face back-face">
+                            <div class="container-about">
+                                <h2>About me</h2>
+                                <p>
+                                    Hey, I'm Jade.
+                                </p>
+                                <div class="row">
+                                    <a href="" target="_blank"><i class="bi fb bi-facebook"></i></a>
+                                    <a href="" target="_blank"><i class="bi fb bi-instagram"></i></a>
+                                    <a href="" target="_blank"><i class="bi fb bi-github"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <section id="Projects">
+            <h1>Projects</h1>
+            <!-- <button id="see-all-projects">See All</button> -->
+            <div class="projects-container">
+                <div class="project project-one">
+                    <h1>Title of Project</h1>
+                    <p>Description</p>
+                    <button>See Live</button>
+                    <button>Source</button>
+                </div>
+                <div class="project project-two">
+                    <h1>Title of Project</h1>
+                    <p>Description</p>
+                    <button>See Live</button>
+                    <button>Source</button>
+                </div>
+                <div class="project project-three">
+                    <h1>Title of Project</h1>
+                    <p>Description</p>
+                    <button>See Live</button>
+                    <button>Source</button>
+                </div>
+                <div class="project project-four">
+                    <h1>Title of Project</h1>
+                    <p>Description</p>
+                    <button>See Live</button>
+                    <button>Source</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="Blog">
+            <h1>Blogs</h1>
+            <div class="blogs-container">
+                <div class="blog blog-one">
+                    <h1>Title of Blog</h1>
+                    <p>Description</p>
+                </div>
+                <div class="blog blog-two">
+                    <h1>Title of Blog</h1>
+                    <p>Description</p>
+                </div>
+                <div class="blog blog-three">
+                    <h1>Title of Blog</h1>
+                    <p>Description</p>
+                </div>
+                <div class="blog blog-four">
+                    <h1>Title of Blog</h1>
+                    <p>Description</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contact">
+            <h1>Contact</h1>
+            <!-- Your contact content here -->
+        </section>
+    </main>
+    <script src="./script.js"></script>
 </body>
 
 </html>

@@ -1,17 +1,33 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
-    background-color: #3b5998;
-    /*  background-image: url(assets/giphy.gif);
-    background-size: contain;
-    background-repeat: repeat;
-    background-position: center; */
+    background-color: black;
+}
+
+#navbar {
+    float: right;
+    margin-right: 5rem;
+}
+
+main {
+    padding-top: 50px;
+}
+
+section {
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
 }
 
 ul {
     display: flex;
     gap: 1.2rem;
     list-style: none;
+}
+
+/* Remove underline */
+nav ul li a {
+    text-decoration: none;
 }
 
 .link {
@@ -45,6 +61,20 @@ ul {
     opacity: 0.5;
 }
 
+.intro-body {
+    text-align: left;
+    padding-top: 250px;
+    margin-left: 200px;
+}
+
+#typewriter {
+    font-size: 30px;
+}
+
+.cursor {
+    border-left: 4px solid white;
+}
+
 h2 {
     margin: 10px 0 0 0;
     padding: 0;
@@ -62,7 +92,8 @@ h3 {
     height: 70vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
+    padding-left: 10rem;
     flex-direction: column;
 }
 
@@ -116,6 +147,7 @@ h3 {
     gap: 10px;
     margin: 20px 0 0 0;
     padding: 20px;
+    color: #686767;
 }
 
 .front-face {
@@ -151,4 +183,27 @@ h3 {
 
 .fb:hover {
     color: #3b5998;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 45%;
+    height: 40vh;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.blog {
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 100%;
+    height: 18vh;
+    margin-bottom: 30px;
 }
