@@ -1,5 +1,5 @@
 # 💫 About Me:
-I am a 3rd Year Computer Science (Security Engineering) and Commerce(Cybersecurity Management) student at UNSW, possessing a keen interest in designing robust, responsive web designs and learning more about real-world applications of cloud security as well as exploring new methods concerning threat detection. <br>
+Hello! I am a 3rd Year Computer Science (Security Engineering) and Commerce(Cybersecurity Management) student at UNSW, possessing a keen interest in designing robust, responsive web designs and learning more about real-world applications of cloud security as well as exploring new methods concerning threat detection. <br>
 
 ## 🌐 Connect with Me:
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://www.facebook.com/jade.kam.3/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jade-kam-79745a201/) 
