@@ -5,8 +5,9 @@ body {
 }
 
 #navbar {
-    float: right;
-    margin-right: 5rem;
+    font-size: 20px;
+    position: fixed;
+    margin-left: 57rem;
 }
 
 main {
@@ -62,13 +63,25 @@ nav ul li a {
 }
 
 .intro-body {
+    position: absolute;
     text-align: left;
-    padding-top: 250px;
-    margin-left: 200px;
+    padding-top: 200px;
+    margin-left: 55rem;
+    z-index: 2;
+    top: 10%;
+    float: right;
 }
 
+
+#first-header {
+    font-weight: bold;
+    font-size: 35px;
+    color: #af40ff;
+}
+
+#second-header,
 #typewriter {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .cursor {
@@ -78,23 +91,26 @@ nav ul li a {
 h2 {
     margin: 10px 0 0 0;
     padding: 0;
-    color: #686767;
 }
 
 h3 {
     margin: 0;
     padding: 10px 30px;
-    color: #686767;
     text-align: center;
 }
 
 .card-body {
+    position: absolute;
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: left;
     padding-left: 10rem;
     flex-direction: column;
+    z-index: 2;
+    top: 150%;
+    left: 45%;
+    transform: translate(-50%, -50%);
 }
 
 .card {
@@ -126,6 +142,7 @@ h3 {
 }
 
 .card-face {
+    /* Existing styles */
     width: 300px;
     height: 450px;
     position: absolute;
@@ -136,7 +153,7 @@ h3 {
     flex-direction: column;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background: #fff8e7;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 
 .container-about {
@@ -147,7 +164,6 @@ h3 {
     gap: 10px;
     margin: 20px 0 0 0;
     padding: 20px;
-    color: #686767;
 }
 
 .front-face {
@@ -200,10 +216,207 @@ h3 {
     margin-top: 20px;
 }
 
+.project-one {
+    color: darkorchid;
+    background-image: url(background.avif);
+    background-size: cover;
+}
+
 .blog {
     border: 3px solid white;
     border-radius: 10px;
     width: 100%;
     height: 18vh;
     margin-bottom: 30px;
+}
+
+.c-button {
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0.9em 1.6em;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+}
+
+.c-button--gooey {
+    color: #06c8d9;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 4px solid #06c8d9;
+    border-radius: 0;
+    position: relative;
+    transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs {
+    height: 100%;
+    filter: url(#goo);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -3px;
+    right: -1px;
+    z-index: -1;
+}
+
+.c-button--gooey .c-button__blobs div {
+    background-color: #06c8d9;
+    width: 34%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(1.4) translateY(125%) translateZ(0);
+    transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(1) {
+    left: -5%;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(2) {
+    left: 30%;
+    transition-delay: 60ms;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(3) {
+    left: 66%;
+    transition-delay: 25ms;
+}
+
+.c-button--gooey:hover {
+    color: #fff;
+}
+
+.c-button--gooey:hover .c-button__blobs div {
+    transform: scale(1.4) translateY(0) translateZ(0);
+}
+
+.socials-container {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 40px;
+    background-color: #333333;
+    margin-left: 65rem;
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgb(194, 194, 194);
+}
+
+.twitter:hover {
+    background: linear-gradient(45deg, #66757f, #00acee, #36daff, #dbedff);
+}
+
+.facebook:hover {
+    background: linear-gradient(45deg, #134ac0, #316ff6, #78a3ff);
+}
+
+.google-plus:hover {
+    background: linear-gradient(45deg, #872419, #db4a39, #ff7061);
+}
+
+.instagram:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg,
+            #f09433 0%,
+            #e6683c 25%,
+            #dc2743 50%,
+            #cc2366 75%,
+            #bc1888 100%);
+    background: -webkit-linear-gradient(45deg,
+            #f09433 0%,
+            #e6683c 25%,
+            #dc2743 50%,
+            #cc2366 75%,
+            #bc1888 100%);
+    background: linear-gradient(45deg,
+            #f09433 0%,
+            #e6683c 25%,
+            #dc2743 50%,
+            #cc2366 75%,
+            #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.social svg {
+    fill: white;
+    height: 20px;
+}
+
+.e-card {
+    background: transparent;
+    box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.45);
+    position: relative;
+    width: 800px;
+    height: 500px;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.wave {
+    width: 1200px;
+    height: 700px;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    margin-left: -50%;
+    margin-top: -70%;
+    background: linear-gradient(744deg, #af40ff, #5b42f3 60%, #00ddeb);
+}
+
+.wave:nth-child(2),
+.wave:nth-child(3) {
+    top: 210px;
+}
+
+.playing .wave {
+    border-radius: 40%;
+    animation: wave 3000ms infinite linear;
+}
+
+.wave {
+    border-radius: 40%;
+    animation: wave 55s infinite linear;
+}
+
+.playing .wave:nth-child(2) {
+    animation-duration: 4000ms;
+}
+
+.wave:nth-child(2) {
+    animation-duration: 50s;
+}
+
+.playing .wave:nth-child(3) {
+    animation-duration: 5000ms;
+}
+
+.wave:nth-child(3) {
+    animation-duration: 45s;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

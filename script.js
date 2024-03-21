@@ -2,7 +2,7 @@
 var typeWriterElement = document.getElementById('typewriter');
 
 // The TextArray: 
-var textArray = ["building websites", "developing apps", "threat detection"];
+var textArray = ["building websites", "developing apps", "cybersecurity", "game development"];
 
 // function to generate the backspace effect 
 function delWriter(text, i, cb) {
