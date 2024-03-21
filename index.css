@@ -8,6 +8,7 @@ body {
     font-size: 20px;
     position: fixed;
     margin-left: 57rem;
+    z-index: 4;
 }
 
 main {
@@ -443,9 +444,15 @@ h3 {
 .blog {
     border: 3px solid white;
     border-radius: 10px;
-    width: 100%;
+    width: 90%;
     height: 18vh;
     margin-bottom: 30px;
+    transition: transform 0.3s;
+    margin-left: 5rem;
+}
+
+.blog:hover {
+    transform: scale(1.1);
 }
 
 .c-button {
@@ -524,7 +531,7 @@ h3 {
     gap: 25px;
     padding: 20px 40px;
     background-color: #333333;
-    margin-left: 34rem;
+    margin-left: 32rem;
 }
 
 .social {
@@ -636,5 +643,206 @@ h3 {
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+/* Original CSS styles here */
+
+/* Media Queries for Improved Responsiveness */
+@media screen and (max-width: 1200px) {
+
+    /* Adjustments for smaller screens */
+    #navbar,
+    .intro-body {
+        margin-left: 10rem;
+    }
+
+    .card-body {
+        padding-left: 5rem;
+    }
+
+    .bio {
+        margin-left: 55%;
+    }
+
+    .resume {
+        left: 20%;
+    }
+
+    .socials-container {
+        margin-left: 25rem;
+    }
+
+    .blogs-container {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    /* Adjustments for smaller screens */
+    #navbar,
+    .intro-body {
+        margin-left: 10rem;
+    }
+
+    .card-body {
+        padding-left: 2rem;
+    }
+
+    .bio {
+        margin-left: 30%;
+    }
+
+    .resume {
+        left: 10%;
+    }
+
+    .socials-container {
+        margin-left: 15rem;
+    }
+
+    /* Centering the blogs */
+    .projects-container,
+    .blogs-container {
+        justify-content: center;
+    }
+
+    .project,
+    .blog {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Adjustments for smaller screens */
+    #navbar,
+    .intro-body {
+        margin-left: 5rem;
+    }
+
+    .card-body {
+        padding-left: 1rem;
+    }
+
+    .bio {
+        margin-left: 20%;
+    }
+
+    .resume {
+        left: 5%;
+    }
+
+    .socials-container {
+        margin-left: 2rem;
+    }
+
+    /* Centering the blogs */
+    .projects-container,
+    .blogs-container {
+        justify-content: center;
+    }
+
+    .project,
+    .blog {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    /* Adjustments for smaller screens */
+    #navbar,
+    .intro-body {
+        margin-left: 2rem;
+    }
+
+    .card-body {
+        padding-left: 0.5rem;
+    }
+
+    .bio {
+        margin-left: 10%;
+    }
+
+    .resume {
+        left: 2%;
+    }
+
+    .socials-container {
+        margin-left: 1rem;
+    }
+
+    .projects-container,
+    .blogs-container {
+        justify-content: center;
+    }
+
+    .project,
+    .blog {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .background-box {
+        display: none;
+        /* Hide background box on smaller screens */
+    }
+
+    .card-body {
+        position: static;
+        /* Set card to static position */
+        float: none;
+        /* Remove float */
+        margin-left: 0;
+        /* Reset margin */
+        margin-top: 20px;
+        /* Adjust margin as needed */
+    }
+
+    .container-about {
+        display: flex;
+        /* Use flex layout */
+        justify-content: space-between;
+        /* Space items evenly */
+        align-items: center;
+        /* Align items vertically */
+    }
+}
+
+@media screen and (max-width: 983px) {
+
+    /* Adjustments for smaller screens */
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    /* Adjustments for smaller screens */
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project,
+    .Blog {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .blogs-container,
+    .Blog {
+        margin-top: 45rem;
+    }
+
+    .socials-container {
+        margin-top: 40rem;
+        margin-left: 12rem;
     }
 }
